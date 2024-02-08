@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir essa imagem em vários dispositivos ou tente aumentar e diminuir a tela.</p>
+
+    <picture>
+        <!-- Usa source media type, muda min para max e no srcset coloca o nome do arquivo e altera o nome do type (precisa por o formato da foto.) -->
+        
+        <!-- da imagem p: -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- da imagem m: -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem-flexivel">
+    </picture>
+
+    <h1>Testando Audio</h1>
+
+    <audio controls> <!-- Controls é pra aparecer os controles de audio na tela -->
+        <!-- testando audio com mp3 -->
+        <source src="midia/El Billete - Edgar Lopez and Quincas Moreira.mp3" type="Audio/mpeg">
+        <!-- testando audio com ogg -->
+        <source src="midia/El Billete - Edgar Lopez and Quincas Moreira.mp3" type="audio/ogg">
+        <p> <!-- dependendo do navegador, não da de reproduzir audios -->
+            Infelizmente seu navegador não consegue reproduzir audios. <a href="midia/El Billete - Edgar Lopez and Quincas Moreira.mp3">Clique aqui para baixar o arquivo mp3.</a>
+        </p>
+    </audio>
+</body>
+</html>
