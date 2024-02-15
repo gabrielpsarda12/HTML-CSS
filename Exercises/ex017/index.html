@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+    <style>
+        /* Importando fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+        /* Safe Combinations: Combinações seguras de fontes, se o aparelho não reconhecer a primeira fonte ele pega a segunda e assim por diante. Sempre colocar uma genérica no fim. */
+        body {
+            /* Fonte importada - Fredericka the Great */
+            font-family: 'Fredericka the Great', Arial, Helvetica, sans-serif;
+            font-size: 1em; /*Igual a: 16px*/
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* Medidas absolutas::
+        cm, mm, in (polegada), pc, pt, pc
+        Medidas relativas:
+        em, ex, rem, vw, vh, %
+        16px geralmente é = 1em */
+
+        /* 
+        font-family: 'work sans', sans-serif;
+        font-weight: bolder;
+            pesos: lighter, normal, bold, bolder
+        font-size: 3em;
+        font-style: italic;
+        Abreviando essas linhas de cima, pode ser usado o: shorhand font(mãozinha):
+        font-style -> font-weight -> font-size -> font-family
+        Nessa ordem.
+        No código fica: */
+        h2 {
+            font: italic bolder 3em 'work sans', sans-serif;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro repellat sit iusto earum eveniet sed optio, magni quod neque voluptas necessitatibus maxime excepturi ad cupiditate nam, et minima iure!
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ab ipsum placeat nisi dignissimos qui. Asperiores facere nihil adipisci assumenda inventore autem doloribus aut corrupti quasi ratione, laborum doloremque sed!</p>
+    
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quod ex expedita ad est aliquam fugiat adipisci voluptatum doloribus beatae facilis, consequuntur odit? Excepturi sint molestias adipisci odit accusamus quaerat.</p>
+
+
+</body>
+</html>
